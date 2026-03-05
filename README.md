@@ -15,6 +15,8 @@ Dataset mentah yang digunakan masih memiliki beberapa permasalahan, yaitu :
 
 - Jumlah row data (sebelum cleaning) : 21865
 - Jumlah row data (sesudah cleaning) : 21830
+- Jumlah kolom orders : 19
+- Jumlah kolom region : 2
 - Raw data diubah menjadi cleaned data untuk menandai bahwa dataset telah melalui proses pembersihan data
 
   Sheets orders dan region --> Sheets orders_cleaned dan region_cleaned
@@ -34,11 +36,14 @@ Beberapa contoh permasalahan yang ditemukan pada dataset sebelum dilakukan prose
   <img src="https://github.com/humairaaryantik/Excel_Data_Cleaning/blob/f4d30ad8c066008759c3f09b8773fca9e68c09e1/Cleaning%20data%20excel/2.png" alt="image" width="800"/>
   
 2. Penulisan nama kategori tidak konsisten
-  <p align="center">
-  <img src="https://github.com/humairaaryantik-portofolio/Project_Udemy/blob/fa8ee98b1f19f2d493c2d3b29a8b34fe034ff98a/Udemy.jpg" alt="image" width="700"/>
+
+<p align="center">
+  <img src="https://github.com/humairaaryantik/Excel_Data_Cleaning/blob/4fff13b916cc4dfb8f25ae3407b3b3f62a947953/Cleaning%20data%20excel/3.png" alt="image" width="800"/>
+
 3. Data kosong (NULLS) dan Unknown
-  <p align="center">
-  <img src="https://github.com/humairaaryantik-portofolio/Project_Udemy/blob/fa8ee98b1f19f2d493c2d3b29a8b34fe034ff98a/Udemy.jpg" alt="image" width="700"/>
+
+<p align="center">
+  <img src="https://github.com/humairaaryantik/Excel_Data_Cleaning/blob/4fff13b916cc4dfb8f25ae3407b3b3f62a947953/Cleaning%20data%20excel/4.png" alt="image" width="800"/>
 
 Berikut tabel yang merangkum permasalahan kualitas data yang telah diidentifikasi pada keseluruhan dataset:
 | No | Tabel | Kolom | Permasalahan | Penyelesaian |
@@ -52,3 +57,27 @@ Berikut tabel yang merangkum permasalahan kualitas data yang telah diidentifikas
 | 7 | orders | country_code | Kode negara hilang |Ya|
 | 8 | orders | seluruh kolom | Duplikat data |Ya|
 | 9 | region | region | Data kode negara tidak konsisten dan Null |Ya|
+
+2️⃣ **Standarisasi Format**
+- Format tanggal dan kategori produk diseragamkan
+  Formula: DATEVALUE, TEXT, UPPER, LOWER, PROPER, IF
+- Spasi berlebih dihapus
+  Formula: TRIM
+- Format mata uang disesuaikan
+  Format Cells → Currency
+  
+3️⃣ **Menghapus Data Duplikat**
+- Mengganti nilai kosong dengan "Unknown" menggunakan fungsi IF()
+- Memerbaiki error #N/A dari proses lookup menggunakan fungsi IFERROR()
+- Menghapus baris jika informasi tidak lengkap atau membiarkan nilai tetap Blank jika data tidak tersedia
+  
+  <p align="center">
+  <img src="LINK_GAMBAR_1" width="400"/>
+  <img src="LINK_GAMBAR_2" width="400"/>
+</p>
+  
+4️⃣ **Validasi Dataset Hasil Cleaning**
+Melakukan pengecekan akhir untuk memastikan dataset sudah bersih dan siap dianalisis
+- Memastikan tidak ada data duplikat menggunakan fitur Remove Duplicates
+- Memeriksa missing values menggunakan Filter
+- Memastikan format data (tanggal, teks, dan angka) sudah konsisten
