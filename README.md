@@ -1,7 +1,7 @@
 </p><h1 align="center" = > CLEANING DATA MENGGUNAKAN EXCEL </h1>
 
 ### DESKRIPSI
-
+---
 Dokumentasi ini bertujuan untuk membersihkan data mentah (raw data) menggunakan Microsoft Excel agar data menjadi lebih akurat, konsisten, dan siap untuk dianalisis.
 
 Dataset mentah yang digunakan masih memiliki beberapa permasalahan, yaitu : 
@@ -12,7 +12,7 @@ Dataset mentah yang digunakan masih memiliki beberapa permasalahan, yaitu :
 4. Inkonsistensi kategori
 
 ### INFORMASI DATASET
-
+---
 - Jumlah row data (sebelum cleaning) : 21865
 - Jumlah row data (sesudah cleaning) : 21830
 - Jumlah kolom orders : 19
@@ -27,6 +27,7 @@ Berikut merupakan tampilan dataset sebelum dilakukan proses data cleaning
   
 
 ### TAHAPAN DATA CLEANING
+---
 1️⃣ **Identifikasi Masalah pada Raw Data (orders dan region)**
 
 Beberapa contoh permasalahan yang ditemukan pada dataset sebelum dilakukan proses data cleaning:
@@ -93,5 +94,6 @@ Melakukan pengecekan akhir untuk memastikan dataset sudah bersih dan siap dianal
 - Memeriksa missing values menggunakan Filter
 - Memastikan format data (tanggal, teks, dan angka) sudah konsisten
 
-### File dataset hasil cleaning dapat diakses di folder berikut
-📂 [Dataset Folder](dataset/)
+### File Dataset Hasil Cleaning
+---
+📂 [Cleaned_Dataset](https://github.com/humairaaryantik/Excel_Data_Cleaning/raw/refs/heads/main/Cleaning%20data%20excel/Data%20Cleaned.xlsx)
