@@ -1,15 +1,25 @@
-</p><h1 align="center" = > CLEANING DATA MENGGUNAKAN EXCEL </h1>
+</p><h1 align="center" = >EXCEL DATA CLEANING PROJECT </h1>
 
+Proyek ini berfokus pada proses pembersihan data (*data cleaning*) menggunakan Microsoft Excel untuk meningkatkan kualitas dataset sebelum digunakan dalam analisis data
+
+Tools yang digunakan : Microsoft Excel
+
+Skills :
+- Data Cleaning
+- Data Preparation
+- Data Validation
+- Excel Formula
+  
 ### DESKRIPSI
 ---
-Dokumentasi ini bertujuan untuk membersihkan data mentah (raw data) menggunakan Microsoft Excel agar data menjadi lebih akurat, konsisten, dan siap untuk dianalisis.
-
-Dataset mentah yang digunakan masih memiliki beberapa permasalahan, yaitu : 
+Dataset mentah (raw data) sering kali memiliki berbagai permasalahan kualitas data seperti :
 
 1. Format data yang tidak konsisten
 2. Missing values (data kosong) atau NULL
 3. Data duplikat
 4. Inkonsistensi kategori
+
+Melalui proyek ini dilakukan proses data cleaning untuk memastikan dataset menjadi lebih akurat, konsisten, dan siap digunakan untuk analisis lebih lanjut.
 
 ### INFORMASI DATASET
 ---
@@ -97,3 +107,21 @@ Melakukan pengecekan akhir untuk memastikan dataset sudah bersih dan siap dianal
 ### File Dataset Hasil Cleaning
 ---
 📂 [Cleaned_Dataset](https://github.com/humairaaryantik/Excel_Data_Cleaning/raw/refs/heads/main/Cleaning%20data%20excel/Data%20Cleaned.xlsx)
+
+### Data Cleaning Impact
+---
+Proses data cleaning memberikan dampak signifikan terhadap kualitas dataset. Berbagai permasalahan data berhasil diperbaiki sehingga dataset menjadi lebih konsisten dan siap digunakan untuk analisis lebih lanjut.
+
+| Aspek Data | Sebelum Cleaning | Setelah Cleaning |
+|------------|------------------|------------------|
+| Data Duplikat | Terdapat 35 baris data duplikat | Seluruh data duplikat telah dihapus |
+| Missing Values | Terdapat beberapa data kosong | Nilai kosong diganti dengan **"Unknown"** |
+| Format Data | Format tanggal dan teks tidak konsisten | Format data telah diseragamkan |
+| Spasi Berlebih | Terdapat spasi tambahan pada beberapa teks | Spasi berlebih dihapus menggunakan fungsi **TRIM** |
+| Kategori Data | Penulisan kategori tidak seragam | Kategori telah distandarisasi |
+
+Melalui proses ini, dataset menjadi lebih bersih, konsisten, dan lebih siap digunakan untuk proses analisis data maupun pembuatan visualisasi.
+
+<hr>
+
+<h2 align="center">TERIMA KASIH
