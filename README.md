@@ -60,24 +60,38 @@ Berikut tabel yang merangkum permasalahan kualitas data yang telah diidentifikas
 
 2️⃣ **Standarisasi Format**
 - Format tanggal dan kategori produk diseragamkan
-  Formula: DATEVALUE, TEXT, UPPER, LOWER, PROPER, IF
-- Spasi berlebih dihapus
-  Formula: TRIM
-- Format mata uang disesuaikan
-  Format Cells → Currency
   
-3️⃣ **Menghapus Data Duplikat**
+  ``` Formula: DATEVALUE, TEXT, UPPER, LOWER, PROPER, IF ```
+  
+- Spasi berlebih dihapus
+  
+  ``` Formula: TRIM ```
+  
+- Format mata uang disesuaikan
+  
+  ``` Format Cells → Currency ```
+  
+3️⃣ **Menangani Missing Values (NULL atau Blanks)** 
 - Mengganti nilai kosong dengan "Unknown" menggunakan fungsi IF()
 - Memerbaiki error #N/A dari proses lookup menggunakan fungsi IFERROR()
 - Menghapus baris jika informasi tidak lengkap atau membiarkan nilai tetap Blank jika data tidak tersedia
-  
+
+ 4️⃣ **Menghapus Data Duplikat** 
+ 
+   `` All Data → Remove Duplicates ``
+ 
   <p align="center">
-  <img src="LINK_GAMBAR_1" width="400"/>
-  <img src="LINK_GAMBAR_2" width="400"/>
+  <img src="https://github.com/humairaaryantik/Excel_Data_Cleaning/blob/4d5fb0141caecdcaae7af434b29ac9e42b826951/Cleaning%20data%20excel/5.jpeg" width="800"/>
+  <img src="https://github.com/humairaaryantik/Excel_Data_Cleaning/blob/4d5fb0141caecdcaae7af434b29ac9e42b826951/Cleaning%20data%20excel/6.jpeg" width="800"/>
 </p>
-  
-4️⃣ **Validasi Dataset Hasil Cleaning**
+
+Total data duplikat yang diidentifikasi : **35 baris**
+
+5️⃣ **Validasi Dataset Hasil Cleaning**
 Melakukan pengecekan akhir untuk memastikan dataset sudah bersih dan siap dianalisis
 - Memastikan tidak ada data duplikat menggunakan fitur Remove Duplicates
 - Memeriksa missing values menggunakan Filter
 - Memastikan format data (tanggal, teks, dan angka) sudah konsisten
+
+### File dataset hasil cleaning dapat diakses di folder berikut
+📂 [Dataset Folder](dataset/)
