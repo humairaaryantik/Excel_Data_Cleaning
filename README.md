@@ -29,9 +29,10 @@ Berikut merupakan tampilan dataset sebelum dilakukan proses data cleaning
 
 Beberapa contoh permasalahan yang ditemukan pada dataset sebelum dilakukan proses data cleaning:
 1. Format tanggal tidak konsisten
-  <p align="center">
-  <img src="https://github.com/humairaaryantik/Excel_Data_Cleaning/blob/bcd20491badd2f78c5e9e6c1064cbb421a2d85fd/Cleaning%20data%20excel/2.jpg" alt="image" width="800"/>
 
+<p align="center">
+  <img src="https://github.com/humairaaryantik/Excel_Data_Cleaning/blob/f4d30ad8c066008759c3f09b8773fca9e68c09e1/Cleaning%20data%20excel/2.png" alt="image" width="800"/>
+  
 2. Penulisan nama kategori tidak konsisten
   <p align="center">
   <img src="https://github.com/humairaaryantik-portofolio/Project_Udemy/blob/fa8ee98b1f19f2d493c2d3b29a8b34fe034ff98a/Udemy.jpg" alt="image" width="700"/>
