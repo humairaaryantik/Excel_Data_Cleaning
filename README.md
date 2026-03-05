@@ -99,6 +99,7 @@ Berikut tabel yang merangkum permasalahan kualitas data yang telah diidentifikas
 Total data duplikat yang diidentifikasi : **35 baris**
 
 5️⃣ **Validasi Dataset Hasil Cleaning**
+
 Melakukan pengecekan akhir untuk memastikan dataset sudah bersih dan siap dianalisis
 - Memastikan tidak ada data duplikat menggunakan fitur Remove Duplicates
 - Memeriksa missing values menggunakan Filter
