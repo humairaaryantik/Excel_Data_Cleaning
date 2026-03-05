@@ -7,7 +7,7 @@ Dokumentasi ini bertujuan untuk membersihkan data mentah (raw data) menggunakan 
 Dataset mentah yang digunakan masih memiliki beberapa permasalahan, yaitu : 
 
 1. Format data yang tidak konsisten
-2. Missing values (data kosong) atau NULLS
+2. Missing values (data kosong) atau NULL
 3. Data duplikat
 4. Inkonsistensi kategori
 
@@ -42,11 +42,11 @@ Berikut tabel yang merangkum permasalahan kualitas data yang telah diidentifikas
 | No | Tabel | Kolom | Permasalahan | Penyelesaian |
 |----|-------|-------|--------------|--------------|
 | 1 | orders | purchase_ts | Format tanggal tidak konsisten |Ya|
-| 2 | orders | purchase_ts | Format tanggal hilang (Nulls) |Tidak|
+| 2 | orders | purchase_ts | Format tanggal hilang (Null) |Tidak|
 | 3 | orders | product_name | Nama produk/kategori tidak konsisten |Ya|
-| 4 | orders | USD_price | Adanya $0 transaksi dan Nulls |Tidak|
-| 5 | orders | marketing_channel | Data Hilang (Nulls) |Ya|
-| 6 | orders | account_creation_method | Adanya data hilang (Nulls) dan Unknown |Ya|
+| 4 | orders | USD_price | Adanya $0 transaksi dan Null |Tidak|
+| 5 | orders | marketing_channel | Data Hilang (Null) |Ya|
+| 6 | orders | account_creation_method | Adanya data hilang (Null) dan Unknown |Ya|
 | 7 | orders | country_code | Kode negara hilang |Ya|
 | 8 | orders | seluruh kolom | Duplikat data |Ya|
-| 9 | region | region | Data kode negara tidak konsisten dan Nulls |Ya|
+| 9 | region | region | Data kode negara tidak konsisten dan Null |Ya|
