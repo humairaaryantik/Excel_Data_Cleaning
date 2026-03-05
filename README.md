@@ -21,7 +21,7 @@ Dataset mentah yang digunakan masih memiliki beberapa permasalahan, yaitu :
   
 Berikut merupakan tampilan dataset sebelum dilakukan proses data cleaning
 <p align="center">
-  <img src="https://github.com/humairaaryantik-portofolio/Project_Udemy/blob/fa8ee98b1f19f2d493c2d3b29a8b34fe034ff98a/Udemy.jpg" alt="image" width="700"/>
+  <img src="https://github.com/humairaaryantik/Excel_Data_Cleaning/blob/bcd20491badd2f78c5e9e6c1064cbb421a2d85fd/Cleaning%20data%20excel/1.jpg" alt="image" width="800"/>
   
 
 ### TAHAPAN DATA CLEANING
@@ -29,8 +29,9 @@ Berikut merupakan tampilan dataset sebelum dilakukan proses data cleaning
 
 Beberapa contoh permasalahan yang ditemukan pada dataset sebelum dilakukan proses data cleaning:
 1. Format tanggal tidak konsisten
-   <p align="center">
-  <img src="https://github.com/humairaaryantik-portofolio/Project_Udemy/blob/fa8ee98b1f19f2d493c2d3b29a8b34fe034ff98a/Udemy.jpg" alt="image" width="700"/>
+  <p align="center">
+  <img src="https://github.com/humairaaryantik/Excel_Data_Cleaning/blob/bcd20491badd2f78c5e9e6c1064cbb421a2d85fd/Cleaning%20data%20excel/2.jpg" alt="image" width="800"/>
+
 2. Penulisan nama kategori tidak konsisten
   <p align="center">
   <img src="https://github.com/humairaaryantik-portofolio/Project_Udemy/blob/fa8ee98b1f19f2d493c2d3b29a8b34fe034ff98a/Udemy.jpg" alt="image" width="700"/>
