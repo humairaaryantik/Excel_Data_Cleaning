@@ -17,11 +17,12 @@ Melalui proyek ini dilakukan proses data cleaning untuk memastikan dataset menja
 ---
 - Jumlah row data (sebelum cleaning) : 21865
 - Jumlah row data (sesudah cleaning) : 21830
-- Jumlah kolom orders : 19
-- Jumlah kolom region : 2
+- Jumlah Kolom 2 : orders dan region
+    1. Jumlah kolom orders : 19
+    2. Jumlah kolom region : 2
 - Raw data diubah menjadi cleaned data untuk menandai bahwa dataset telah melalui proses pembersihan data
-
-  Sheets orders dan region --> Sheets orders_cleaned dan region_cleaned
+    1. orders --> orders_cleaned
+    2. region --> region_cleaned
   
 Berikut merupakan tampilan dataset sebelum dilakukan proses data cleaning
 <p align="center">
@@ -30,7 +31,15 @@ Berikut merupakan tampilan dataset sebelum dilakukan proses data cleaning
 
 ### TAHAPAN DATA CLEANING
 ---
-1️⃣ **Identifikasi Masalah pada Raw Data (orders dan region)**
+1️⃣ **Duplikasi Data Mentah (Raw Data)**
+
+    Tahapan ini bertujuan untuk menjaga data asli tetap aman dan menghindari kehilangan data jika terjadi kesalahan.
+
+2️⃣ **Data Understanding atau Pengecekan Awal Dataset**
+
+    Dilakukan untuk melihat tipe data (angka/teks/tanggal), mengecek jumlah baris dan kolom, dan memahami arti setiap kolom.
+  
+3️⃣ **Identifikasi Masalah pada Raw Data (orders dan region)**
 
 Beberapa contoh permasalahan yang ditemukan pada dataset sebelum dilakukan proses data cleaning:
 1. Format tanggal tidak konsisten
@@ -61,7 +70,7 @@ Berikut tabel yang merangkum permasalahan kualitas data yang telah diidentifikas
 | 8 | orders | seluruh kolom | Duplikat data |Ya|
 | 9 | region | region | Data kode negara tidak konsisten dan Null |Ya|
 
-2️⃣ **Standarisasi Format**
+4️⃣ **Standarisasi Format**
 - Format tanggal dan kategori produk diseragamkan
   
   ``` Formula: DATEVALUE, TEXT, UPPER, LOWER, PROPER, IF ```
@@ -74,12 +83,12 @@ Berikut tabel yang merangkum permasalahan kualitas data yang telah diidentifikas
   
   ``` Format Cells → Currency ```
   
-3️⃣ **Menangani Missing Values (NULL atau Blanks)** 
+5️⃣ **Menangani Missing Values (NULL atau Blanks)** 
 - Mengganti nilai kosong dengan "Unknown" menggunakan fungsi IF()
 - Memerbaiki error #N/A dari proses lookup menggunakan fungsi IFERROR()
 - Menghapus baris jika informasi tidak lengkap atau membiarkan nilai tetap Blank jika data tidak tersedia
 
- 4️⃣ **Menghapus Data Duplikat** 
+6️⃣ **Menghapus Data Duplikat** 
  
    `` All Data → Remove Duplicates ``
  
@@ -90,7 +99,7 @@ Berikut tabel yang merangkum permasalahan kualitas data yang telah diidentifikas
 
 Total data duplikat yang diidentifikasi : **35 baris**
 
-5️⃣ **Validasi Dataset Hasil Cleaning**
+7️⃣ **Validasi Dataset Hasil Cleaning**
 
 Melakukan pengecekan akhir untuk memastikan dataset sudah bersih dan siap dianalisis
 - Memastikan tidak ada data duplikat menggunakan fitur Remove Duplicates
