@@ -1,14 +1,6 @@
 </p><h1 align="center" = >EXCEL DATA CLEANING PROJECT </h1>
 
 Proyek ini berfokus pada proses pembersihan data (*data cleaning*) menggunakan Microsoft Excel untuk meningkatkan kualitas dataset sebelum digunakan dalam analisis data
-
-Tools yang digunakan : Microsoft Excel
-
-Skills :
-- Data Cleaning
-- Data Preparation
-- Data Validation
-- Excel Formula
   
 ### DESKRIPSI
 ---
